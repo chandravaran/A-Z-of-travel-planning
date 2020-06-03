@@ -14,17 +14,24 @@
   <h1 class="restaurant list_headings">Available Restaurants list</h1>
   <% results.forEach(result=>{ %>
     <div class="restaurant_div_properties">
-      <h1 class="display-4"><%= result.restaurant_name %></h1>
-      <% if(result.is_vegetarian === 'y') {%>
-          <p class="lead">Pure Vegetarian Restaurant</p>
-      <%} else {%>
-          <p class="lead">Non-Vegetarian Restaurant</p>
-      <% } %>
-      <p class="lead">Location: <%= result.cities_City_Name %> </p>
-      <p class="lead">Opening-time: <%= result.opening_time %> , Closing-time: <%= result.closing_time %></p>
-      <p class="lead">Phone Number: <%= result.phone_number %></p>
-      <p class="lead">Rating: <%= result.average_user_review_restaurants%>/5</p>
-      <a class="btn btncar_list btn-lg" href="mailto:saikumardande2001@gmail.com" role="button">Book now</a>
+      <div class="row">
+        <div class="col-md-8 col-sm-6">
+          <h1 class="display-4"><%= result.restaurant_name.toUpperCase() %></h1>
+          <% if(result.is_vegetarian === 'y') {%>
+              <p class="lead"><b>Pure Vegetarian Restaurant</b></p>
+          <%} else {%>
+              <p class="lead"><b>Non-Vegetarian Restaurant</b></p>
+          <% } %>
+          <p class="lead"><b>Location:</b> <%= result.cities_City_Name %> </p>
+          <p class="lead"><b>Opening-time:</b> <%= result.opening_time %> , <b>Closing-time:</b> <%= result.closing_time %></p>
+          <p class="lead"><b>Phone Number:</b> <%= result.phone_number %></p>
+          <p class="lead"><b>Rating:</b> <%= result.average_user_review_restaurants%>/5</p>
+          <a class="btn btncar_list btn-lg" href="mailto:saikumardande2001@gmail.com" role="button">Book now</a>
+        </div>
+        <div class="col-md-4 col-sm-6 tourist_div">
+            <img class="toursit_images" src="<%="/restaurant_pics/" + result.restaurant_number + ".jpg"%>" alt="">
+        </div>
+      </div>
     </div>
   <% })%>
 

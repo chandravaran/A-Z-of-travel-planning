@@ -22,7 +22,7 @@
     <div class="cab_div_properties">
       <div class="row">
         <div class="col-md-8 col-sm-6">
-          <h1 class="display-4"><%= result.driver_name %></h1>
+          <h1 class="display-4"><%= result.driver_name.toUpperCase(0) %></h1>
           <p class="lead"><b>Phone number:</b> <%= result.phone_number %></p>
           <p class="lead"><b>Location:</b> <%= result.cities_City_Name %></p>
           <p class="lead"><b>Car Model:</b> <%= car_names[cnt] %></p>

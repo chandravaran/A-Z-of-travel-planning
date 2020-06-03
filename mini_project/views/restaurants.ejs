@@ -17,7 +17,7 @@
     <div class="restaurants_main">
 
       <div class="text-center mb-4">
-        <img class="mb-4" src="./images/hotel.png" alt="" width="72" height="72">
+        <img class="mb-4" src="./images/restaurant.png" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Book restaurants</h1>
         <p>Book restaurants in your current location</p>
       </div>
@@ -29,7 +29,8 @@
         <select class="custom-select" id="inputGroupSelect01" name="from">
           <option selected>Choose...</option>
           <% results.forEach(result=> { %>
-            <option value="<%=result.cities_City_Name%>"> <%= result.cities_City_Name  %></option>
+            <% var city = result.cities_City_Name%>
+            <option value="<%=result.cities_City_Name%>"> <%=city.charAt(0).toUpperCase()+city.slice(1)%></option>
         <%})%>
         </select>
       </div>

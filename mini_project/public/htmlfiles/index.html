@@ -20,18 +20,28 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
+            <form class="" action="/add" method="post">
+              <button class="btn btn-lg bg-transparent" type="submit">Add</button>
+            </form>
+          </li>
+          <li class="nav-item">
             <form class="" action="/cabs" method="post">
               <button class="btn btn-lg bg-transparent" type="submit">Cabs</button>
             </form>
           </li>
           <li class="nav-item">
-            <form class="" action="/restaurants" method="post">
-              <button class="btn btn-lg bg-transparent" type="submit">Restaurants</button>
+            <form class="" action="/hotel" method="post">
+              <button class="btn btn-lg bg-transparent" type="submit">Hotels</button>
             </form>
           </li>
           <li class="nav-item">
             <form class="" action="/trains" method="post">
               <button class="btn btn-lg bg-transparent" type="submit">Trains</button>
+            </form>
+          </li>
+          <li class="nav-item">
+            <form class="" action="/restaurants" method="post">
+              <button class="btn btn-lg bg-transparent" type="submit">Restaurants</button>
             </form>
           </li>
           <li class="nav-item">
@@ -44,26 +54,32 @@
     </nav>
     <h1 class="main_heading">A-Z travel tours</h1>
     <section class="frame2">
-      <div class="row">
-        <div class="frame2_box col-lg-3">
+      <div class="row container" style="margin: 0% 10%">
+        <div class="frame2_box col-lg-2">
           <img class="icon" src="./images/car.png" alt="">
           <form class="" action="/cabs" method="post">
             <button class="btn btn-outline-dark" type="submit">Cabs</button>
           </form>
         </div>
-        <div class="frame2_box col-lg-3">
+        <div class="frame2_box col-lg-2">
+          <img class="icon" src="./images/hotel.png" alt="">
+          <form class="" action="/hotel" method="post">
+            <button class="btn btn-outline-dark" type="submit">Hotels</button>
+          </form>
+        </div>
+        <div class="frame2_box col-lg-2">
           <img class="icon" src="./images/train.png" alt="">
           <form class="" action="/trains" method="post">
             <button class="btn btn-outline-dark" type="submit">Trains</button>
           </form>
         </div>
-        <div class="frame2_box col-lg-3">
-          <img class="icon" src="./images/hotel.png" alt="">
+        <div class="frame2_box col-lg-2">
+          <img class="icon" src="./images/restaurant.png" alt="">
           <form class="" action="/restaurants" method="post">
             <button class="btn btn-outline-dark" type="submit">Restaurants</button>
           </form>
         </div>
-        <div class="frame2_box col-lg-3">
+        <div class="frame2_box col-lg-2">
           <img class="icon" src="./images/tourist_places.png" alt="">
           <form class="" action="/tourist" method="post">
             <button class="btn btn-outline-dark" type="submit">Tourist places</button>
