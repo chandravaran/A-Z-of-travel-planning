@@ -14,6 +14,10 @@ body {
 	background: url('/images/restaurant.jpg');
 }
 
+.hotel_frame {
+	background: url('/images/hotel2.jpg');
+}
+
 .tourist_frame {
 	background: url('/images/tourist.jpg');
 }
@@ -30,6 +34,10 @@ body {
 	background: url('/images/restaurant2.jpg');
 }
 
+.hotel_list_frame {
+	background: url('/images/hotel.jpg');
+}
+
 .tourist_list_frame {
 	background: url('/images/tourist2.jpg');
 }
@@ -38,7 +46,7 @@ body {
   background: url('/images/add_bg.jpg');
 }
 
-.frame, .cabs_frame, .restaurants_frame, .tourist_frame, .train_frame, .cabs_list_frame, .restaurants_list_frame, .tourist_list_frame, .train_list_frame, .add_background{
+.frame, .cabs_frame, .restaurants_frame, .tourist_frame, .train_frame, .hotel_frame, .cabs_list_frame, .restaurants_list_frame, .hotel_list_frame, .tourist_list_frame, .train_list_frame, .add_background{
   top: 0;
   position: fixed;
   width: 100%;

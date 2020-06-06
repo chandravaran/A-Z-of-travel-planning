@@ -136,7 +136,7 @@ module.exports = (app) => {
     });
 
     app.post('/trains', (req, res) => {
-      let sql = 'SELECT state_name FROM states';
+      let sql = 'SELECT DISTINCT starting_state FROM trains_has_states';
       let query = db.query(sql, (err, results) => {
           if(err) throw err;
           res.render('trains', {results});
